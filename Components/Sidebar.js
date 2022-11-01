@@ -1,32 +1,50 @@
 import React from 'react';
-
+import { BuildingLibraryIcon, CreditCardIcon, HeartIcon, HomeIcon, PlusCircleIcon, SearchIcon } from '@heroicons/react/24/solid'
 const Sidebar = () => {
     return (
         <>
+               <div className='p-4'>
 
-            <div className='bg-[#000000] text-white mb-4'>
-                <div  className='flex justify-start align-middle gap-5 '>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-5 h-5">
-                        <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
-                    </svg>
-                    <h3>Home</h3>
-                </div>
-                <div className='flex justify-start align-middle gap-5'>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray" class="w-6 h-6">
-                        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
-                    </svg>
-                    <h3>Search</h3>
-                </div>
-                <div className='flex justify-start align-middle gap-5'>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                        <path d="M11.584 2.376a.75.75 0 01.832 0l9 6a.75.75 0 11-.832 1.248L12 3.901 3.416 9.624a.75.75 0 01-.832-1.248l9-6z" />
-                        <path fillRule="evenodd" d="M20.25 10.332v9.918H21a.75.75 0 010 1.5H3a.75.75 0 010-1.5h.75v-9.918a.75.75 0 01.634-.74A49.109 49.109 0 0112 9c2.59 0 5.134.202 7.616.592a.75.75 0 01.634.74zm-7.5 2.418a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75zm3-.75a.75.75 0 01.75.75v6.75a.75.75 0 01-1.5 0v-6.75a.75.75 0 01.75-.75zM9 12.75a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75z" clipRule="evenodd" />
-                        <path d="M12 7.875a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" />
-                    </svg>
+            <div className='space-y-1 text-sm text-gray '>
+                <div >
 
-                    <h3>Your library</h3>
+                    <button className='flex items-center justify-start space-x-3 hover:text-gray-400' >
+                        <HomeIcon className="w-5 h-5" />
+                        <h3>Home</h3>
+
+                    </button>
                 </div>
-            </div>
+                <div >
+                    <button className='flex justify-start space-x-3 hover:text-gray-400 '>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+
+                        <h3>Search</h3>
+                    </button>
+                </div>
+                <div >
+                    <button className='flex justify-start space-x-3 hover:text-gray-400' >
+                        <BuildingLibraryIcon className="w-5 h-5" />
+                        <h3> Your library</h3>
+                    </button>
+                </div>
+
+            <hr />
+            </div >
+                 <div className="text-sm text-gray" >
+                    <button className='flex justify-start space-x-3 hover:text-gray-400 '>
+                       <PlusCircleIcon className="w-5 h-5"/> 
+                        <h1>Create Playlist</h1>
+                    </button>
+                 </div>
+                 <div>
+                    <button className='flex justify-start space-x-3 hover:text-gray-400 ' >
+                        <HeartIcon className="w-5 h-5" />
+                        <h3>Like Songs</h3>
+                    </button>
+                 </div>
+               </div>
         </>
 
 
