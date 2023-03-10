@@ -5,7 +5,7 @@ const Sidebar = () => {
         <>
                <div className='p-4'>
 
-            <div className='space-y-1 text-sm text-gray '>
+            <div className='space-y-1 text-sm text-gray-400 '>
                 <div >
 
                     <button className='flex items-center justify-start space-x-3 hover:text-gray-400' >
@@ -30,9 +30,11 @@ const Sidebar = () => {
                     </button>
                 </div>
 
-            <hr />
-            </div >
-                 <div className="text-sm text-gray" >
+            <hr  className='bg-gray-400  space-y-4'/>
+            </div>
+            <div className="text-sm space-y-2 text-gray-400" >
+
+                 <div  >
                     <button className='flex justify-start space-x-3 hover:text-gray-400 '>
                        <PlusCircleIcon className="w-5 h-5"/> 
                         <h1>Create Playlist</h1>
@@ -44,6 +46,7 @@ const Sidebar = () => {
                         <h3>Like Songs</h3>
                     </button>
                  </div>
+            </div>
                </div>
         </>
 

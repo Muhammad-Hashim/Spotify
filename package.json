@@ -11,8 +11,9 @@
   "dependencies": {
     "@heroicons/react": "^2.0.12",
     "autoprefixer": "^10.4.13",
+    "g": "^2.0.1",
     "heroicon": "^0.0.2",
-    "next": "13.0.0",
+    "next": "^13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
